@@ -1,0 +1,20 @@
+.DS_Store
+.build/
+*.dmg
+
+# Security / Credentials / Private Tokens
+*.json
+!Package.resolved
+auth.json
+credentials.json
+config.json
+*.key
+*.pem
+.env
+.env.*
+
+# Xcode / Swift SPM user data
+.swiftpm/
+xcuserdata/
+*.xcodeproj
+*.xcworkspace
