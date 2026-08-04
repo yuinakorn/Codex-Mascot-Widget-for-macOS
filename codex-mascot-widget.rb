@@ -1,6 +1,6 @@
 cask "codex-mascot-widget" do
   version "1.0.0"
-  sha256 "d76cfd23352bc17a0692db74660b28ddeb7351277bae2e76217dfe0f15fd9940"
+  sha256 "d06a8f7d025653d560001e6ae1e483a08d479cb5859b114866a19e5fca724ad0"
 
   url "https://github.com/yuinakorn/Codex-Mascot-Widget-for-macOS/releases/download/v#{version}/OpenAICodexMascotWidget.dmg"
   name "OpenAI Codex Mascot Widget"
