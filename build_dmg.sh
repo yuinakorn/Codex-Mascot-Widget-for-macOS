@@ -17,7 +17,9 @@ mkdir -p "$APP_PATH/Contents/Resources"
 
 cp ".build/release/CodexMascotWidget" "$APP_PATH/Contents/MacOS/CodexMascotWidget"
 
-if [ -f "/tmp/AppIcon.icns" ]; then
+if [ -f "AppIcon.icns" ]; then
+    cp "AppIcon.icns" "$APP_PATH/Contents/Resources/AppIcon.icns"
+elif [ -f "/tmp/AppIcon.icns" ]; then
     cp "/tmp/AppIcon.icns" "$APP_PATH/Contents/Resources/AppIcon.icns"
 fi
 
@@ -32,6 +34,8 @@ cat <<EOF > "$APP_PATH/Contents/Info.plist"
     <string>com.openai.codex.mascot.widget</string>
     <key>CFBundleName</key>
     <string>OpenAI Codex Mascot Widget</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon.icns</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>LSUIElement</key>
