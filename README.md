@@ -69,6 +69,28 @@ If you don't use Codex CLI, open Widget Settings ⚙️ and enter your **OpenAI 
 
 ---
 
+## 🍺 Installation via Homebrew (Recommended for macOS)
+
+To bypass macOS Gatekeeper warnings ("app is damaged"):
+
+```bash
+# 1. Tap the repository
+brew tap yuinakorn/tap
+
+# 2. Trust the custom tap (Required because of automatic Gatekeeper quarantine removal script)
+brew trust yuinakorn/tap
+
+# 3. Install the application
+brew install --cask codex-mascot-widget
+```
+
+To uninstall via Homebrew:
+```bash
+brew uninstall --cask codex-mascot-widget
+```
+
+---
+
 ## 🛠️ Build & Running
 
 ### Run Locally (Development)
