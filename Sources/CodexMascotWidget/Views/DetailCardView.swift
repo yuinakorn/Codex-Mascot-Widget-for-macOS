@@ -41,7 +41,7 @@ public struct DetailCardView: View {
                         .font(.headline)
                         .fontWeight(.bold)
                     
-                    Text("v1.0.3")
+                    Text("v1.0.0")
                         .font(.system(size: 9, weight: .semibold))
                         .foregroundColor(.secondary)
                         .padding(.horizontal, 5)
